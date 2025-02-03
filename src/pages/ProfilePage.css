@@ -1,0 +1,47 @@
+.profile-container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 20px; /* Adjusted padding for a more balanced look */
+    margin: 70px auto; /* Center the container itself by setting left and right margins to auto */
+    border-radius: 20px;
+    height: 50vh;
+    width: 120vh; /* Consider using a more standard width for responsiveness */
+    opacity: 90%;
+    background-color: #f0f0f0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.profile-container h1 {
+    margin-bottom: 20px; 
+    text-align: center;
+    width: 100%; 
+}
+
+.profile-layout {
+    display: flex;
+    width: 100%; /* Change to 100% for full width within the container */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.profile-info-left {
+    flex: 1;
+    text-align: center; 
+}
+
+.profile-info-right {
+    flex: 1;
+    text-align: left; 
+}
+
+.profile-picture {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-container p {
+    margin: 15px 0;
+    font-size: 20px;
+}

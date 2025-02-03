@@ -1,0 +1,138 @@
+/* Main Home Container */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    opacity: 95%;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Conference Gallery Section */
+.conference-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+/* Conference Card */
+.conference-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.conference-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.conference-card h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.conference-card p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+.conference-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Call to Action Section */
+.cta-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #5e5e5e;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.cta-section button {
+    padding: 12px 25px;
+    background-color: #df3d3d;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-section button:hover {
+    background-color: #fa8787;
+}
+/* Additional Description Section */
+.additional-description {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.additional-description h2 {
+    font-size: 2rem;
+    color: #333;
+    text-decoration: underline; /* Added underline */
+}
+
+.additional-description p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.additional-description h3 {
+    font-size: 2rem;
+    color: #333;
+    text-decoration: underline; /* Added underline */
+}
+
+.additional-description ul {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.additional-description ul li {
+    margin-bottom: 10px;
+}

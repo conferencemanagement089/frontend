@@ -1,0 +1,37 @@
+.session-button-container {
+    margin-bottom: 20px;
+}
+
+.session-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    transition: background-color 0.3s ease;
+}
+
+.session-button:hover {
+    background-color: #e0e0e0;
+}
+
+.conferences-container {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+.conferences-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.conferences-container li {
+    margin-bottom: 10px;
+}

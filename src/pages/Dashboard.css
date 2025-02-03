@@ -1,0 +1,240 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 95%;
+    background-color: #f9f9f9;
+    min-height: 50vh;
+}
+
+.dashboard-container h1 {
+    margin-bottom: 10px;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.dashboard-container table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin-top: 70px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container table th,
+.dashboard-container table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.dashboard-container table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.dashboard-container table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.dashboard-container table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.dashboard-container button {
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: bold;
+    background-color: #df3d3d;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.dashboard-container button:hover {
+    background-color: #fa8787;
+}
+
+.create-conference-form,
+.upload-csv-form {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.create-conference-form h2,
+.upload-csv-form h2 {
+    margin-top: 0;
+}
+
+.create-conference-form input,
+.create-conference-form textarea,
+.upload-csv-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.create-conference-form button,
+.upload-csv-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.popup {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    border-radius: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.dashboard-container {
+    padding: 20px;
+}
+
+.session-container {
+    margin-bottom: 20px;
+}
+
+.session-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    transition: background-color 0.3s ease;
+}
+
+
+.conferences-container {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+.conferences-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.conferences-container li {
+    margin-bottom: 10px;
+}
+
+
+.create-session-form,
+.create-conference-form,
+.upload-csv-form {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.create-session-form h2,
+.create-conference-form h2,
+.upload-csv-form h2 {
+    margin-top: 0;
+}
+
+.create-session-form input,
+.create-session-form textarea,
+.create-conference-form input,
+.create-conference-form textarea,
+.upload-csv-form input {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 10px auto; 
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.create-session-form button,
+.create-conference-form button,
+.upload-csv-form button {
+    padding: 10p;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.popup {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #df3d3d;
+    text-decoration: underline;
+}
+
+
+.dashboard-button {
+    background-color: #df3d3d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    width: 200px; 
+    text-align: center;
+}
+
+.dashboard-button:hover {
+    background-color: #fa8787;
+}
+

@@ -1,0 +1,43 @@
+.header {
+    background-color: #df3d3d;
+    color: white;
+    padding: 20px;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out logo and navigation */
+    align-items: center; /* Center vertically */
+}
+
+.logo-container {
+    text-align: left;
+}
+
+.logo {
+    height: 80px; /* Adjust the height of the logo as needed */
+}
+
+.header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header nav ul li {
+    margin-left: 20px;
+}
+
+.header nav ul li a,
+.header nav ul li button {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.header nav ul li button:hover,
+.header nav ul li a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,102 @@
+.enter-conference-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    opacity: 95%;
+    background-color: #f0f0f0;
+}
+
+.conference-details {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.conference-details h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.conference-details p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.conference-details button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #df3d3d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.conference-details button:hover {
+    background-color: #fa8787;
+}
+
+.chat-room {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.chat-room h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.chat-messages {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.chat-message {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-message strong {
+    color: #007bff;
+}
+
+.chat-input {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.chat-input button {
+    padding: 10px 15px;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    background-color: #df3d3d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-input button:hover {
+    background-color: #fa8787;
+}
