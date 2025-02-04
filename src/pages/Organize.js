@@ -21,7 +21,7 @@ const Organize = () => {
     const fetchConference = async () => {
         setLoading(true); // Show loading spinner while fetching data
         try {
-            const res = await axios.get(`http://localhost:5001/api/conferences/${id}`, {
+            const res = await axios.get(`https://backend-lzjt.onrender.com/api/conferences/${id}`, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -36,7 +36,7 @@ const Organize = () => {
 
     const fetchChats = async () => {
         try {
-            const res = await axios.get(`http://localhost:5001/api/conferences/${id}/chats`, {
+            const res = await axios.get(`https://backend-lzjt.onrender.com/api/conferences/${id}/chats`, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -54,7 +54,7 @@ const Organize = () => {
         setUpdatingChat(true); // Set updating state to true while the request is being processed
         try {
             const res = await axios.patch(
-                `http://localhost:5001/api/conferences/${id}/chat`,
+                `https://backend-lzjt.onrender.com/api/conferences/${id}/chat`,
                 { enabled: !conference.chatEnabled },
                 {
                     headers: {

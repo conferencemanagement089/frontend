@@ -19,7 +19,7 @@ const RegisterPage = () => {
         e.preventDefault();
         try {
             // Sending the form data to the backend API using axios
-            await axios.post('http://localhost:5001/api/auth/register', {
+            await axios.post('https://backend-lzjt.onrender.com/api/auth/register', {
                 username,
                 email,
                 password,

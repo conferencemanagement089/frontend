@@ -39,7 +39,7 @@ const AdminDashboard = () => {
 
     const fetchSessions = async () => {
         try {
-            const res = await axios.get('http://localhost:5001/api/sessions', {
+            const res = await axios.get('https://backend-lzjt.onrender.com/api/sessions', {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -52,7 +52,7 @@ const AdminDashboard = () => {
 
     const fetchChairs = async () => {
         try {
-            const res = await axios.get('http://localhost:5001/api/users', {
+            const res = await axios.get('https://backend-lzjt.onrender.com/api/users', {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -66,7 +66,7 @@ const AdminDashboard = () => {
 
     const toggleEnableConference = async (id) => {
         try {
-            const res = await axios.patch(`http://localhost:5001/api/conferences/${id}/enable`, {}, {
+            const res = await axios.patch(`https://backend-lzjt.onrender.com/api/conferences/${id}/enable`, {}, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -82,7 +82,7 @@ const AdminDashboard = () => {
 
     const assignChair = async (id, chairId) => {
         try {
-            const res = await axios.patch(`http://localhost:5001/api/conferences/${id}/assign-chair`, { chairId }, {
+            const res = await axios.patch(`https://backend-lzjt.onrender.com/api/conferences/${id}/assign-chair`, { chairId }, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -98,7 +98,7 @@ const AdminDashboard = () => {
 
     const handleCreateSession = async () => {
         try {
-            await axios.post('http://localhost:5001/api/sessions', newSession, {
+            await axios.post('https://backend-lzjt.onrender.com/api/sessions', newSession, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -112,7 +112,7 @@ const AdminDashboard = () => {
 
     const handleCreateConference = async () => {
         try {
-            await axios.post(`http://localhost:5001/api/sessions/${selectedSession}/conferences`, newConference, {
+            await axios.post(`https://backend-lzjt.onrender.com/api/sessions/${selectedSession}/conferences`, newConference, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -145,7 +145,7 @@ const AdminDashboard = () => {
             const confId = match[1];
             console.log("Session ID:", confId);
             try {
-                const res = await axios.get(`http://localhost:5001/api/conferences/verify-ticket/${confId}`, {
+                const res = await axios.get(`https://backend-lzjt.onrender.com/api/conferences/verify-ticket/${confId}`, {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
@@ -183,7 +183,7 @@ const AdminDashboard = () => {
                         break;
                     }
                     try {
-                        await axios.post('http://localhost:5001/api/sessions', {
+                        await axios.post('https://backend-lzjt.onrender.com/api/sessions', {
                             name: session.name,
                             startDateTime: session.startDateTime,
                             endDateTime: session.endDateTime,

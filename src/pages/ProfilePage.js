@@ -10,7 +10,7 @@ const ProfilePage = () => {
     useEffect(() => {
         const fetchProfile = async () => {
             try {
-                const res = await axios.get('http://localhost:5001/api/auth/profile', {
+                const res = await axios.get('https://backend-lzjt.onrender.com/api/auth/profile', {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }

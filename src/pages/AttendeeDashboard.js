@@ -30,7 +30,7 @@ const AttendeeDashboard = () => {
 
     const fetchSessions = async () => {
         try {
-            const res = await axios.get('http://localhost:5001/api/sessions', {
+            const res = await axios.get('https://backend-lzjt.onrender.com/api/sessions', {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -45,7 +45,7 @@ const AttendeeDashboard = () => {
 
     const fetchRegistrations = async () => {
         try {
-            const res = await axios.get(`http://localhost:5001/api/registrations/${user._id}`, {
+            const res = await axios.get(`https://backend-lzjt.onrender.com/api/registrations/${user._id}`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -60,7 +60,7 @@ const AttendeeDashboard = () => {
 
     const registerForConference = async (id) => {
         try {
-            await axios.post(`http://localhost:5001/api/conferences/${id}/register`, { userId: user._id }, {
+            await axios.post(`https://backend-lzjt.onrender.com/api/conferences/${id}/register`, { userId: user._id }, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

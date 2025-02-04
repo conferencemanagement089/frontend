@@ -16,7 +16,7 @@ const ChairDashboard = () => {
     const fetchSessions = async () => {
         try {
             // Fetch sessions from API
-            const res = await axios.get('http://localhost:5001/api/sessions', {
+            const res = await axios.get('https://backend-lzjt.onrender.com/api/sessions', {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

@@ -21,7 +21,7 @@ const Report = () => {
 
     const fetchConferences = async () => {
         try {
-            const res = await axios.get('http://localhost:5001/api/conferences', {
+            const res = await axios.get('https://backend-lzjt.onrender.com/api/conferences', {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -34,7 +34,7 @@ const Report = () => {
 
     const fetchRegistrations = async (conferenceId) => {
         try {
-            const res = await axios.get(`http://localhost:5001/api/reports/registrations/${conferenceId}`, {
+            const res = await axios.get(`https://backend-lzjt.onrender.com/api/reports/registrations/${conferenceId}`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

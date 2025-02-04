@@ -39,7 +39,7 @@ const AuthProvider = ({ children }) => {
         const fetchProfile = async () => {
             if (state.token) {
                 try {
-                    const res = await axios.get('http://localhost:5001/api/auth/profile', {
+                    const res = await axios.get('https://backend-lzjt.onrender.com/api/auth/profile', {
                         headers: {
                             Authorization: `Bearer ${state.token}`
                         }

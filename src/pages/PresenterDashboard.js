@@ -15,7 +15,7 @@ const PresenterDashboard = () => {
 
     const fetchSessions = async () => {
         try {
-            const res = await axios.get('http://localhost:5001/api/sessions', {
+            const res = await axios.get('https://backend-lzjt.onrender.com/api/sessions', {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -34,7 +34,7 @@ const PresenterDashboard = () => {
 
     const requestPayment = async (id) => {
         try {
-            await axios.post(`http://localhost:5001/api/conferences/${id}/request-payment`, {}, {
+            await axios.post(`https://backend-lzjt.onrender.com/api/conferences/${id}/request-payment`, {}, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

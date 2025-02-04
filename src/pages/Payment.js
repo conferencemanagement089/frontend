@@ -13,7 +13,7 @@ const Payment = () => {
 
     const fetchPendingPayments = async () => {
         try {
-            const res = await axios.get('http://localhost:5001/api/conferences', {
+            const res = await axios.get('https://backend-lzjt.onrender.com/api/conferences', {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -26,7 +26,7 @@ const Payment = () => {
 
     const handlePaymentApproval = async (id, status) => {
         try {
-            await axios.patch(`http://localhost:5001/api/conferences/${id}/approve-payment`, { status }, {
+            await axios.patch(`https://backend-lzjt.onrender.com/api/conferences/${id}/approve-payment`, { status }, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

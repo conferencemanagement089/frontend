@@ -23,7 +23,7 @@ const EnterConference = () => {
     const fetchConference = async () => {
         try {
             console.log('Fetching conference:', id);
-            const res = await axios.get(`http://localhost:5001/api/conferences/${id}`, {
+            const res = await axios.get(`https://backend-lzjt.onrender.com/api/conferences/${id}`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -38,7 +38,7 @@ const EnterConference = () => {
     const fetchChats = async () => {
         try {
             console.log('Fetching chats for conference:', id);
-            const res = await axios.get(`http://localhost:5001/api/conferences/${id}/chats`, {
+            const res = await axios.get(`https://backend-lzjt.onrender.com/api/conferences/${id}/chats`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -70,7 +70,7 @@ const EnterConference = () => {
 
         try {
             console.log('Sending message:', newMessage, id);
-            const res = await axios.post(`http://localhost:5001/api/conferences/${id}/chats`, { message: newMessage }, {
+            const res = await axios.post(`https://backend-lzjt.onrender.com/api/conferences/${id}/chats`, { message: newMessage }, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
